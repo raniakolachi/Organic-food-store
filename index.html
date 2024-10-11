@@ -16,77 +16,44 @@
 </head>
 
 <body>
-    <div class="bg-black">
-        <div class="">
-            <div class="container d-flex justify-content-between ">
-                <div class=" d-flex justify-content-center">
-                    <iconify-icon class="text-2 me-3 mt-3 fs-2 fw-bold" icon="iconamoon:lightning-1-fill"></iconify-icon>
-                    <h2 class="text-white mt-2 fw-bold">envato <span class="fw-normal">market</span></h2>
-                </div>
-                <div class="">
-                    <button class="text rounded-2 px-4 py-2 mt-3" type="submit">Buy now</button>
-                </div>
-            </div>
-        </div>
-    </div>
-  
-      
+   
+   
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="navbar bg-body-white">
+    
+                <nav class="navbar navbar-expand-lg bg-body-white d-none d-lg-flex">
                     <div class="container-fluid">
-                        <a class="navbar-brand text-success fw-bold fs-1">Gr<iconify-icon
-                                icon="cil:apple"></iconify-icon>ffer</a>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2 p-2 pe-5 bg-body-tertiary" type="search"
-                                placeholder="Catergoy" aria-label="Search">
-                            <input class="form-control me-2 p-2 pe-5 bg-body-tertiary" type="search"
-                                placeholder="Search products.." aria-label="Search">
+                        <a class="navbar-brand text-success fw-bold fs-1">Gr<iconify-icon icon="cil:apple"></iconify-icon>ffer</a>
+                        <form class="d-flex ms-auto" role="search">
+                            <input class="form-control me-2 p-2 pe-5 bg-body-tertiary" type="search" placeholder="Category" aria-label="Search">
+                            <input class="form-control me-2 p-2 pe-5 bg-body-tertiary" type="search" placeholder="Search products.." aria-label="Search">
                         </form>
-                        <div class="row">
-                            <div class="">
-                                <div class="d-flex">
-                                    <div>
-                                        <iconify-icon class="fw-bold fs-1 mt-2 me-2"
-                                            icon="octicon:person-24"></iconify-icon>
-                                        <p class="ms-2">List</p>
-                                    </div>
-                                    <div class="ms-2 mb-4">
-                                        <span>Hello,Sing in</span>
-                                        <h3>Account &</h3>
-                                    </div>
+                        <div class="d-flex ms-auto">
+                            <div class="d-flex align-items-center">
+                                <iconify-icon class="fw-bold fs-1 mt-2 me-2" icon="octicon:person-24"></iconify-icon>
+                                <div class="ms-2">
+                                    <span>Hello, Sign in</span>
+                                    <h6>Account & Lists</h6>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="container">
-                                <div class="d-flex">
-                                    <div>
-                                        <iconify-icon class="fw-bold fs-1 mt-3"
-                                            icon="ion:lock-open-outline"></iconify-icon>
-                                    </div>
-                                    <div class="ms-2 mb-4">
-                                        <span>My Cart</span>
-                                        <h6>00.00</h6>
-                                    </div>
+    
+                            <div class="d-flex align-items-center ms-4">
+                                <iconify-icon class="fw-bold fs-1 mt-2 me-2" icon="ion:lock-open-outline"></iconify-icon>
+                                <div class="ms-2">
+                                    <span>My Cart</span>
+                                    <h6>00.00</h6>
                                 </div>
                             </div>
-                            </nav>
                         </div>
                     </div>
-                </div>
-            </div>
-            <hr>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Home</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                </nav>
+    
+                <hr class="d-none d-lg-block">
+    
+                <nav class="navbar navbar-expand-lg bg-body-tertiary d-none d-lg-flex">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Home</a>
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">About</a>
@@ -98,29 +65,67 @@
                                 <a class="nav-link text-black" href="#">Blog</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link text-black" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Media
-                                </a>
-
+                                <a class="nav-link text-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Media</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-black" aria-disabled="true">Pages</a>
                             </li>
                         </ul>
                         <form class="d-flex" role="search">
-                            <p class=" me-4 pt-3"><iconify-icon icon="healthicons:phone-outline"></iconify-icon>+01800
-                                7777 000</p>
+                            <p class="me-4 pt-3"><iconify-icon icon="healthicons:phone-outline"></iconify-icon>+01800 7777 000</p>
                             <button class="btn bg-warning text-black p-2 px-5" type="submit">Get a Quote</button>
                         </form>
                     </div>
-                </div>
-            </nav>
+                </nav>
+    
+        
+                <nav class="navbar navbar-expand-lg bg-body-tertiary d-lg-none"> 
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Gr<iconify-icon icon="cil:apple"></iconify-icon>ffer</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSM" aria-controls="navbarSM" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSM">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-black" href="#">Shop</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-black" href="#">Blog</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link text-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Media</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-black" aria-disabled="true">Pages</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+    
+            </div>
         </div>
     </div>
-    <div>
-        <h1>I am Rania</h1>
+    <div class="bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 mt-5 p-5">
+                <h5>Starting at <span class="text-success">$22</span></h5>
+        <h1 class="mt-2">Grocery Right<br>At Your Door</h1>
+        <p class="mt-3">Only this weekend for the remaimning of the month.</p>
+        <button type="button" class="btn btn-warning mt-3">Shop Now</button>
+            </div>
+            <div class="col-6 img-fluid">
+                <img height="90%" width="90%" src="./imges/pic.png">
+            </div>
+        </div>
     </div>
+    </div>
+    
 </body>
 
 </html>
