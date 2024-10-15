@@ -1,31 +1,40 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
-
 *{
     margin-top: 0;
     padding: 0;
     font-family: "Space Grotesk", sans-serif;
 }
-
 .text{
     background-color: #7AA93C;
     color: white;
-    
-}
+    }
 .text-2{
     color: #7AA93C;
 }
 .bg{
+    background-image: url(./imges/image\ \(1\).png);
+    background-size: cover;
     background-color: #F5EFDF;
 }
-
-
+.bg2{
+    background-image: url(./imges/Deal.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
 .poleo{
     background-image: url(./imges/image.png);
-    height: 350px;
+    
+    height: 400px;
 }
 .icon{
      background-color: #FFBA41;
+     padding: 2 !important;   
+    margin: 0 !important;    
+    font-size: 1.5rem !important; 
+    top: 0px !important;    
+    right: 0px !important;  
+    position: absolute !important; 
 }
 .icon:hover{
     background-color: green;
@@ -36,11 +45,9 @@
     position: relative;
     display: inline-block;
 }
-
 .image-container img {
     transition: opacity 0.5s ease; 
 }
-
 .image-container .hover-image {
     position: absolute;
     top: 0;
@@ -53,7 +60,100 @@
 .image-container:hover .hover-image {
     opacity: 1;
 }
-
 .image-container:hover .main-image {
     opacity: 0;
+}.card {
+    transition: transform 0.3s ease, border 0.3s ease;
+}
+.image-container {
+    position: relative;
+}
+.image-container img {
+    transition: opacity 0.5s ease; 
+}
+.image-container .hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.image-container:hover .hover-image {
+    opacity: 1;
+}
+.image-container:hover .main-image {
+    opacity: 0;
+}
+.card:hover {
+    transform: translateY(-10px); 
+    border: 2px solid yellow; 
+}
+.poleo {
+    border: 2px solid yellow; 
+    text-align: center;
+    transition: transform 0.3s ease, border 0.3s ease;
+}
+.poleo:hover {
+    transform: translateY(-10px);
+    border: 2px solid yellow; 
+}
+.btn-outline-light {
+    color: #fff;
+    border-color: #fff;
+}
+.btn-outline-light:hover {
+    background-color: #fff;
+    color: #000;
+}
+@media only screen and (max-width: 768px) {
+    .card {
+        width: 100% !important;
+    }
+.poleo {
+        width: 100%;
+        
+    }
+}
+@media only screen and (max-width: 576px) {
+    .card img {
+        height: auto;
+        width: 100%;
+    }
+}
+.btn2:hover{
+    background-color: #136450;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.btn2{
+    color: #000;
+    background-color: white;
+}
+.basket{
+    background-image: url(./imges/baskets.jpg);
+    background-size: cover;
+    height: 300px;
+}
+.morgen{
+    margin-top: 180px;
+}
+.main{
+    background-image: url(./imges/banners2.jpg);
+    background-size: cover;
+    height: 330px;
+}
+.services{
+    background-image: url(./imges/-services.jpg);
+    background-size: cover;
+    height: 90vh;
+}
+.services .col-lg-2:hover .bg-light {
+    transform: scale(1.05); 
+    transition: transform 0.3s ease-in-out; 
+}
+.services .bg-light {
+    transition: transform 0.3s ease-in-out; 
 }
