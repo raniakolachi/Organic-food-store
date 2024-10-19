@@ -101,3 +101,28 @@
 .image-box:hover {
     transform: scale(1.05); 
 }
+.image-container {
+    position: relative;
+}
+
+.hover-image {
+    display: none;
+}
+
+.image-container:hover .hover-image {
+    display: block;
+}
+
+.image-container:hover .card-img-top {
+    display: none;
+}
+#cart-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    z-index: 1000;
+}
