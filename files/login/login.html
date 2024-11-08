@@ -9,7 +9,7 @@
         crossorigin="anonymous"></script>
     <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js"></script>
+    <scrip src="./script.js"></script>
 </head>
 
 <body>
@@ -75,22 +75,26 @@
     <div class="container">
         <div class="row justify-content-center mt-5">
             <div class="col-lg-6">
-                <div class="mb-3">
-                    <label for="inputEmail" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email">
-                </div>
-                <div class="mb-3">
-                    <label for="inputPassword" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="inputPassword" placeholder="Enter your password">
-                </div>
-                <span>Remember me</span>
-                <div class="d-flex justify-content-center mt-3">
-                    <button type="button" class="bg-success border-0 text-white rounded-0 p-3 px-5 w-100"
-                        id="loginButton">log in</button>
-                </div>
+                <form id="user-form">
+                    <div class="mb-3">
+                        <label for="inputEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="user-email" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="user-password"
+                            placeholder="Enter your password">
+                    </div>
+                    <span>Remember me</span>
+                    <div class="d-flex justify-content-center mt-3">
+                        <button type="submit" class="bg-success border-0 text-white rounded-0 p-3 px-5 w-100">Log in
+                            </button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
+
     <div class="container mt-4 d-lg-block d-none d-md-none d-sm-none">
         <div class="row">
             <div class="col-md-9 col-12">
@@ -187,6 +191,7 @@
             <p>&copy; 2024 Company, Inc. All rights reserved.</p>
         </div>
     </div>
+    <script src="./login.js"></script>
 </body>
 
 </html>
