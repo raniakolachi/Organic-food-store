@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Organic Food Store</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -18,14 +18,18 @@
 <body>
 
 
-    <div class="container">
+    <div class="position-fixed z-3 w-100 bg-body-secondary">
         <div class="row">
             <div class="col-12">
+                
                 <nav class="navbar navbar-expand-lg bg-body-white d-none d-lg-flex">
                     <div class="container-fluid">
-                        <a class="navbar-brand text-success fw-bold fs-1">
+                       
+                        <a class="navbar-brand text-success fw-bold fs-1" href="#">
                             Gr<iconify-icon icon="cil:apple"></iconify-icon>ffer
                         </a>
+    
+                        
                         <form class="d-flex ms-auto" role="search">
                             <div class="input-group me-2">
                                 <input class="form-control p-2 bg-body-tertiary" type="search" placeholder="Category"
@@ -42,23 +46,19 @@
                                 </span>
                             </div>
                         </form>
+    
+                       
                         <div class="d-flex ms-auto">
                             <div class="d-flex align-items-center">
                                 <iconify-icon class="fw-bold fs-1 mt-2 me-2" icon="octicon:person-24"></iconify-icon>
                                 <div class="ms-2 d-flex">
-                                    <a class="text-decoration-none text-black" href="./files/login/login.html">
-                                        Log in
-                                    </a>
-                                    <a class="text-decoration-none text-black" href="./files/login/signin/signin.html">
-                                        Sign in
-                                    </a>
-
+                                    <a class="text-decoration-none text-black me-2" href="./files/login/login.html">Log in</a>
+                                    <a class="text-decoration-none text-black" href="./files/login/signin/signin.html">Sign
+                                        in</a>
                                 </div>
                             </div>
-
                             <div class="d-flex align-items-center ms-4">
-                                <iconify-icon class="fw-bold fs-1 mt-2 me-2"
-                                    icon="ion:lock-open-outline"></iconify-icon>
+                                <iconify-icon class="fw-bold fs-1 mt-2 me-2" icon="ion:lock-open-outline"></iconify-icon>
                                 <div class="ms-2">
                                     <span>My Cart</span>
                                     <h6>00.00</h6>
@@ -69,71 +69,108 @@
                 </nav>
             </div>
         </div>
-    </div>
-    <hr class="d-none d-lg-block">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary d-none d-lg-flex">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Home</a>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-black" href="#">Shop</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-black" href="#">Blog</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link text-black" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">Media</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-black" aria-disabled="true">Pages</a>
-                </li>
-            </ul>
-            <form class="d-flex" role="search">
-                <p class="me-4 pt-3"><iconify-icon icon="healthicons:phone-outline"></iconify-icon>+01800
-                    7777 000</p>
-                <button class="btn bg-warning text-black p-2 px-5" type="submit">Get a Quote</button>
-            </form>
-        </div>
-    </nav>
-
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary d-lg-none">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Gr<iconify-icon icon="cil:apple"></iconify-icon>ffer</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSM"
-                aria-controls="navbarSM" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSM">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black" href="#">Shop</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black" href="#">Blog</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link text-black" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">Media</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black" aria-disabled="true">Pages</a>
-                    </li>
-                </ul>
+    
+        
+        <hr class="d-none d-lg-block">
+    
+       
+        <nav class="navbar navbar-expand-lg bg-body-tertiary w-100">
+            <div class="container-fluid">
+                
+                <a class="navbar-brand d-lg-none" href="#">Gr<iconify-icon icon="cil:apple"></iconify-icon>ffer</a>
+    
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+               
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Media
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Media 1</a></li>
+                                <li><a class="dropdown-item" href="#">Media 2</a></li>
+                                <li><a class="dropdown-item" href="#">Media 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+    
+                   
+                    <form class="d-flex align-items-center">
+                        <p class="me-4 pt-3 mb-0 d-none d-lg-block">
+                            <iconify-icon icon="healthicons:phone-outline"></iconify-icon>+01800 7777 000
+                        </p>
+                        <button class="btn btn-warning position-relative" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <iconify-icon class="fw-bold fs-4 mt-2 me-2" icon="mdi:cart"></iconify-icon>
+                           
+                            <span id="cart-badge" class="position-absolute badge rounded-pill bg-danger"
+                                style="right: 90px; top: 4px; display:block;">
+                                0
+                                <span class="visually-hidden">unread items</span>
+                            </span>
+                            Get a Quote
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Your Cart</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+               
+                <div id="cart-items">
+                    
+                </div>
+                <div class="d-flex justify-content-between">
+                    <strong>Total:</strong>
+                    <span id="cart-total">0</span>
+                </div>
+                <button class="btn btn-danger mt-3" onclick="clearCart()">Clear Cart</button>
             </div>
         </div>
-    </nav>
     </div>
+    
+       
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Your Cart</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                
+                <div id="cart-items">
+                    
+                </div>
+                <div class="d-flex justify-content-between">
+                    <strong>Total:</strong>
+                    <span id="cart-total">0</span>
+                </div>
+                <button class="btn btn-danger mt-3" onclick="clearCart()">Clear Cart</button>
+            </div>
+        </div>
     </div>
-    </div>
-    <div style="background-image: url(./imges/image\ \(1\).png);background-size: cover;">
+    
+    <div style="padding-top: 200px; background-image: url(./imges/image\ \(1\).png);background-size: cover;">
         <div class="container ">
             <div class="row ">
                 <div class=" col-md-6 col-xs-12 mt-5 p-5 ">
@@ -191,7 +228,7 @@
                 <div class="card flex-fill text-center">
                     <div class="image-container">
                         <iconify-icon
-                            class="fw-bold fs-5 mt-2 me-2 p-2 rounded-bottom-pill icon d-block position-absolute end-0 z-2 bg-warning"
+                            class="fw-bold fs-5 mt-2 me-2 p-2 rounded-bottom-pill icon d-block position-absolute end-0 z-2   bg-warning"
                             icon="mdi:cart"
                             onclick="addToCart('Broccoli and Cauliflower Max', './imges/img2.jpg', 'c12.00', './imges/img.jpg')">
                         </iconify-icon>
@@ -211,7 +248,7 @@
                 <div class="card flex-fill text-center">
                     <div class="image-container">
                         <iconify-icon
-                            class="fw-bold fs-5 mt-2 me-2 p-2 rounded-bottom-pill icon d-block position-absolute end-0 z-2 bg-warning"
+                            class="fw-bold fs-5 mt-2 me-2 p-2 rounded-bottom-pill icon d-block position-absolute end-0 z-2  bg-warning"
                             icon="mdi:cart"
                             onclick="addToCart('Cadbury Crunchie Chocolate Bar', './imges/jpg.jpg', 'c90.00', './imges/grapes.jpg')">
                         </iconify-icon>
@@ -231,7 +268,7 @@
                 <div class="card flex-fill text-center">
                     <div class="image-container">
                         <iconify-icon
-                            class="fw-bold fs-5 mt-2 me-2 p-2 rounded-bottom-pill icon d-block position-absolute end-0 z-2 bg-warning"
+                            class="fw-bold fs-5 mt-2 me-2 p-2 rounded-bottom-pill icon d-block position-absolute end-0 z-2   bg-warning"
                             icon="mdi:cart"
                             onclick="addToCart('Fresh or The Bold Ground', './imges/enveto.jpg', 'c43.00', './imges/chips.jpg')">
                         </iconify-icon>
@@ -251,7 +288,7 @@
                 <div class="card flex-fill text-center">
                     <div class="image-container">
                         <iconify-icon
-                            class="fw-bold fs-5 mt-2 me-2 p-2 rounded-bottom-pill icon d-block position-absolute end-0 z-2 bg-warning"
+                            class="fw-bold fs-5 mt-2 me-2 p-2 rounded-bottom-pill icon d-block position-absolute end-0 z-2   bg-warning"
                             icon="mdi:cart"
                             onclick="addToCart('Frito-lay Doritos Cheetos Mix', './imges/angro.jpg', 'c80.00', './imges/cut fruit.jpg')">
                         </iconify-icon>
@@ -280,7 +317,7 @@
                 <div class="card flex-fill text-center">
                     <div class="image-container">
                         <iconify-icon
-                            class="fw-bold fs-5 mt-2 me-2 p-2 rounded-bottom-pill icon d-block position-absolute end-0 z-2 bg-warning"
+                            class="fw-bold fs-5 mt-2 me-2 p-2 rounded-bottom-pill icon d-block position-absolute end-0 z-2   bg-warning"
                             icon="mdi:cart"
                             onclick="addToCart('Broccoli and Cauliflower Max', './imges/img2.jpg', 'c12.00', './imges/img.jpg')">
                         </iconify-icon>
@@ -302,7 +339,7 @@
                 <div class="card flex-fill text-center">
                     <div class="image-container">
                         <iconify-icon
-                            class="fw-bold fs-5 mt-2 me-2 p-2 rounded-bottom-pill icon d-block position-absolute end-0 z-2 bg-warning"
+                            class="fw-bold fs-5 mt-2 me-2 p-2 rounded-bottom-pill icon d-block position-absolute end-0 z-2  bg-warning"
                             icon="mdi:cart"
                             onclick="addToCart('Cadbury Crunchie Chocolate Bar', './imges/jpg.jpg', 'c90.00', './imges/grapes.jpg')">
                         </iconify-icon>
@@ -324,7 +361,7 @@
                 <div class="card flex-fill text-center">
                     <div class="image-container">
                         <iconify-icon
-                            class="fw-bold fs-5 mt-2 me-2 p-2 rounded-bottom-pill icon d-block position-absolute end-0 z-2 bg-warning"
+                            class="fw-bold fs-5 mt-2 me-2 p-2 rounded-bottom-pill icon d-block position-absolute end-0 z-2   bg-warning"
                             icon="mdi:cart"
                             onclick="addToCart('Fresh or The Bold Ground', './imges/enveto.jpg', 'c43.00', './imges/chips.jpg')">
                         </iconify-icon>
@@ -346,7 +383,7 @@
                 <div class="card flex-fill text-center">
                     <div class="image-container">
                         <iconify-icon
-                            class="fw-bold fs-5 mt-2 me-2 p-2 rounded-bottom-pill icon d-block position-absolute end-0 z-2 bg-warning"
+                            class="fw-bold fs-5 mt-2 me-2 p-2 rounded-bottom-pill icon d-block position-absolute end-0 z-2  bg-warning"
                             icon="mdi:cart"
                             onclick="addToCart('Frito-lay Doritos Cheetos Mix', './imges/angro.jpg', 'c80.00', './imges/cut fruit.jpg')">
                         </iconify-icon>
@@ -376,11 +413,11 @@
 
         </div>
     </div>
-            <div id="cart-container" style="display: none;">
-              
-            <div id="cart-items">
-            </div>
+    <div id="cart-container" style="display: none;">
+
+        <div id="cart-items">
         </div>
+    </div>
     </div>
 
 
@@ -444,7 +481,7 @@
                 <div class="card h-100">
                     <div class="image-container position-relative">
                         <iconify-icon
-                            class="fw-bold fs-5 mt-2 me-2 p-2 rounded-bottom-pill icon bg-warning d-block position-absolute end-0 z-2"
+                            class="fw-bold fs-5 mt-2 me-2 p-2 rounded-bottom-pill icon bg-warning d-block position-absolute end-0 "
                             icon="mdi:cart"></iconify-icon>
                         <img class="main-image card-img-top" src="./imges/img2.jpg" alt="Product Image">
                         <img class="hover-image card-img-top" src="./imges/img.jpg" alt="Hover Image">
@@ -460,7 +497,7 @@
                 <div class="card h-100">
                     <div class="image-container position-relative">
                         <iconify-icon
-                            class="fw-bold fs-5 mt-2 me-2 p-2 rounded-bottom-pill icon d-block bg-warning position-absolute end-0 z-2"
+                            class="fw-bold fs-5 mt-2 me-2 p-2 rounded-bottom-pill icon d-block bg-warning position-absolute end-0 "
                             icon="mdi:cart"></iconify-icon>
                         <img class="main-image card-img-top" src="./imges/jpg.jpg" alt="Product Image">
                         <img class="hover-image card-img-top" src="./imges/grapes.jpg" alt="Hover Image">
@@ -476,7 +513,7 @@
                 <div class="card h-100">
                     <div class="image-container position-relative">
                         <iconify-icon
-                            class="fw-bold fs-5 mt-2 me-2 p-2 rounded-bottom-pill icon d-block bg-warning position-absolute end-0 z-2"
+                            class="fw-bold fs-5 mt-2 me-2 p-2 rounded-bottom-pill icon d-block bg-warning position-absolute end-0 "
                             icon="mdi:cart"></iconify-icon>
                         <img class="main-image card-img-top" src="./imges/enveto.jpg" alt="Product Image">
                         <img class="hover-image card-img-top" src="./imges/chips.jpg" alt="Hover Image">
@@ -503,7 +540,7 @@
                 <div class="card h-100">
                     <div class="image-container position-relative">
                         <iconify-icon
-                            class="fw-bold fs-5 mt-2 me-2 p-2 rounded-bottom-pill icon d-block bg-warning position-absolute end-0 z-2"
+                            class="fw-bold fs-5 mt-2 me-2 p-2 rounded-bottom-pill icon d-block bg-warning position-absolute end-0 z-2  "
                             icon="mdi:cart"></iconify-icon>
                         <img class="main-image card-img-top" src="./imges/angro.jpg" alt="Product Image">
                         <img class="hover-image card-img-top" src="./imges/cut fruit.jpg" alt="Hover Image">
@@ -519,7 +556,7 @@
                 <div class="card h-100">
                     <div class="image-container position-relative">
                         <iconify-icon
-                            class="fw-bold fs-5 mt-2 me-2 p-2 rounded-bottom-pill icon bg-warning d-block position-absolute end-0 z-2"
+                            class="fw-bold fs-5 mt-2 me-2 p-2 rounded-bottom-pill icon bg-warning d-block position-absolute end-0 z-2  "
                             icon="mdi:cart"></iconify-icon>
                         <img class="main-image card-img-top" src="./imges/cips2.jpg" alt="Product Image">
                         <img class="hover-image card-img-top" src="./imges/cut fruit.jpg" alt="Hover Image">
@@ -556,7 +593,7 @@
                 <div class="card h-100">
                     <div class="image-container position-relative">
                         <iconify-icon
-                            class="fw-bold fs-5 mt-2 me-2 p-2 rounded-bottom-pill icon bg-warning d-block position-absolute end-0 z-2"
+                            class="fw-bold fs-5 mt-2 me-2 p-2 rounded-bottom-pill icon bg-warning d-block position-absolute end-0 z-2  "
                             icon="mdi:cart"></iconify-icon>
                         <img class="main-image card-img-top" src="./imges/dates.jpg" alt="Product Image">
                         <img class="hover-image card-img-top" src="./imges/img.jpg" alt="Hover Image">
@@ -572,7 +609,7 @@
                 <div class="card h-100">
                     <div class="image-container position-relative">
                         <iconify-icon
-                            class="fw-bold fs-5 mt-2 me-2 p-2 rounded-bottom-pill icon d-block bg-warning position-absolute end-0 z-2"
+                            class="fw-bold fs-5 mt-2 me-2 p-2 rounded-bottom-pill icon d-block bg-warning position-absolute end-0 z-2 "
                             icon="mdi:cart"></iconify-icon>
                         <img class="main-image card-img-top" src="./imges/cut fruit.jpg" alt="Product Image">
                         <img class="hover-image card-img-top" src="./imges/grapes.jpg" alt="Hover Image">
@@ -588,7 +625,7 @@
                 <div class="card h-100">
                     <div class="image-container position-relative">
                         <iconify-icon
-                            class="fw-bold fs-5 mt-2 me-2 p-2 rounded-bottom-pill icon bg-warning d-block position-absolute end-0 z-2"
+                            class="fw-bold fs-5 mt-2 me-2 p-2 rounded-bottom-pill icon bg-warning d-block position-absolute end-0 z-2 "
                             icon="mdi:cart"></iconify-icon>
                         <img class="main-image card-img-top" src="./imges/cips2.jpg" alt="Product Image">
                         <img class="hover-image card-img-top" src="./imges/chips.jpg" alt="Hover Image">
@@ -615,7 +652,7 @@
                 <div class="card h-100">
                     <div class="image-container position-relative">
                         <iconify-icon
-                            class="fw-bold fs-5 mt-2 me-2 p-2 rounded-bottom-pill icon d-block bg-warning position-absolute end-0 z-2"
+                            class="fw-bold fs-5 mt-2 me-2 p-2 rounded-bottom-pill icon d-block bg-warning position-absolute end-0 z-2 "
                             icon="mdi:cart"></iconify-icon>
                         <img class="main-image card-img-top" src="./imges/chips.jpg" alt="Product Image">
                         <img class="hover-image card-img-top" src="./imges/cut fruit.jpg" alt="Hover Image">
@@ -631,7 +668,7 @@
                 <div class="card h-100">
                     <div class="image-container position-relative">
                         <iconify-icon
-                            class="fw-bold fs-5 mt-2 me-2 p-2 rounded-bottom-pill icon bg-warning d-block position-absolute end-0 z-2"
+                            class="fw-bold fs-5 mt-2 me-2 p-2 rounded-bottom-pill icon bg-warning d-block position-absolute end-0 z-2 "
                             icon="mdi:cart"></iconify-icon>
                         <img class="main-image card-img-top" src="./imges/grapes.jpg" alt="Product Image">
                         <img class="hover-image card-img-top" src="./imges/cut fruit.jpg" alt="Hover Image">
@@ -646,7 +683,7 @@
         </div>
     </div>
 
-    <div class="d-none d-sm-none d-md-none">
+    <div class="d-none d-sm-none d-md-block d-lg-block ">
         <div class="container-fluid mt-5 services "
             style="background-image: url('./imges/-services.jpg'); background-size: cover; background-position: center; height: auto; min-height: 90vh;">
             <div class="row g-4 text-center align-items-center ms-5 morgen">
@@ -880,6 +917,8 @@
             <p>&copy; 2024 Company, Inc. All rights reserved.</p>
         </div>
     </div>
+
+
 
 
 </body>

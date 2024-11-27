@@ -1,48 +1,72 @@
-
 let cart = [];
 
 function addToCart(name, image, price, hoverImage) {
-  const product = { name, image, price, hoverImage };
-  cart.push(product);
+    // Check if item already exists in the cart
+    const existingItem = cart.find(item => item.name === name);
 
-  updateCartDisplay();
+    if (existingItem) {
+        // Increase quantity and update total price for the item
+        existingItem.quantity += 1;
+        existingItem.totalPrice = existingItem.quantity * parseFloat(existingItem.price.replace('c', ''));
+    } else {
+        // Add new item to the cart
+        const newItem = {
+            name,
+            image,
+            price,
+            hoverImage,
+            quantity: 1,
+            totalPrice: parseFloat(price.replace('c', '')) // Initial price for 1 quantity
+        };
+        cart.push(newItem);
+    }
+
+    // Update the UI
+    updateCartUI();
+    updateCartBadge();
 }
 
-function removeFromCart(index) {
-  cart = cart.filter((_, i) => i !== index); 
-  updateCartDisplay(); 
+function updateCartUI() {
+    const cartItemsContainer = document.getElementById("cart-items");
+    cartItemsContainer.innerHTML = ""; // Clear previous items
+
+    cart.forEach(item => {
+        const cartItem = document.createElement("div");
+        cartItem.classList.add("d-flex", "justify-content-between", "align-items-center", "mb-3");
+
+        cartItem.innerHTML = `
+            <img src="${item.image}" alt="${item.name}" style="width: 50px; height: 50px; object-fit: cover;">
+            <span>${item.name} (${item.quantity})</span>
+            <span>c${item.totalPrice.toFixed(2)}</span>
+            <button class="btn btn-sm btn-danger" onclick="removeFromCart('${item.name}')">Remove</button>
+        `;
+
+        cartItemsContainer.appendChild(cartItem);
+    });
+
+    updateCartTotal();
+}
+
+function updateCartTotal() {
+    const total = cart.reduce((sum, item) => sum + item.totalPrice, 0);
+    document.getElementById("cart-total").innerText = `c${total.toFixed(2)}`;
+}
+
+function updateCartBadge() {
+    const cartBadge = document.getElementById("cart-badge");
+    cartBadge.innerText = cart.length;
+
+    cartBadge.style.display = cart.length > 0 ? "inline-block" : "none";
 }
 
 function clearCart() {
-  cart = [];
-  updateCartDisplay(); 
+    cart = [];
+    updateCartUI();
+    updateCartBadge();
 }
 
-function updateCartDisplay() {
-  const cartContainer = document.getElementById("cart-container");
-  const cartItems = document.getElementById("cart-items");
-
-  
-  cartItems.innerHTML = "";
-
-  if (cart.length > 0) {
-    cartContainer.style.display = "block"; 
-
-    cart.map((item, index) => {
-      const cartItem = document.createElement("div");
-      cartItem.className =
-        "cart-item d-flex justify-content-between align-items-center my-2";
-
-      cartItem.innerHTML = `
-        <div>
-            <img src="${item.hoverImage}" alt="${item.name}" style="width: 50px; height: 50px; object-fit: cover;">
-            ${item.name} - ${item.price}
-        </div> 
-        <button class="btn btn-sm btn-danger" onclick="removeFromCart(${index})">Remove</button>`;
-
-      cartItems.appendChild(cartItem); 
-    });
-  } else {
-    cartContainer.style.display = "none"; 
-  }
+function removeFromCart(name) {
+    cart = cart.filter(item => item.name !== name);
+    updateCartUI();
+    updateCartBadge();
 }
